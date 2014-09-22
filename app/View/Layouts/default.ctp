@@ -34,7 +34,10 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
-	?>
+		echo $this->Html->script('jquery-2.1.1.min');
+		echo $this->Html->script('cardApp');
+		?>
+		<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 </head>
 <body>
 	<div id="container">
